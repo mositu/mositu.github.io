@@ -1,0 +1,31 @@
+body{
+	background-color: #fff; 
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei",微软雅黑;
+	min-width: 1200px;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,h2,h3,p{
+	margin: 0;
+	padding: 0;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/*伪元素是行内元素 正常浏览器清除浮动方法*/
+ .clearfix:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+}

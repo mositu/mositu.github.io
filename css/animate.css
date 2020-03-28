@@ -1,0 +1,191 @@
+/*顶部动画*/
+.header-logo,
+.header-nav{
+	transition: all 1s;
+}
+.header-logo_animate_init,
+.header-nav_animate_init{
+	opacity: 0;
+	transform: translate(0,-100%);
+}
+
+.header-logo_animate_done,
+.header-nav_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+/* 导航栏 */
+.nav-item-tip{
+	transition: all 0.5s;
+}
+/*第一屏动画*/
+.screen-1-text-h1{
+	transition: all 1s;
+}
+.screen-1-text-p{
+	transition: all 1s 0.4s;
+}
+.screen-1-text-h1_animate_init,
+.screen-1-text-p_animate_init{
+	opacity: 0;
+	transform: translate(0,300%);
+}
+.screen-1-text-h1_animate_done,
+.screen-1-text-p_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+
+/*第二屏动画*/
+.screen-2-text-1{
+	transition: all 1s;
+}
+.screen-2-text-br,
+.screen-2-text-2,
+.screen-2-text-3,
+.screen-2-pic1{
+	transition: all 1s 0.4s;
+}
+.screen-2-text-1_animate_init{
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen-2-text-1_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen-2-text-br_animate_init,
+.screen-2-text-2_animate_init,
+.screen-2-text-3_animate_init,
+.screen-2-pic1_animate_init{
+	opacity: 0;
+	transform: translate(0,400%);
+}
+.screen-2-text-br_animate_done,
+.screen-2-text-2_animate_done,
+.screen-2-text-3_animate_done,
+.screen-2-pic1_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+
+/*第三屏动画*/
+.screen-3-pic{
+	transition: all 1s;
+}
+.screen-3-text{
+	transition: all 1s 0.5s;
+}
+.screen-3-icon-box{
+	transition: all 1s 1s;
+}
+
+.screen-3-pic_animate_init{
+	opacity: 0;
+	transform: scale(0,0);
+}
+.screen-3-pic_animate_done{
+	opacity: 1;
+	transform: scale(100%,100%);
+}
+.screen-3-text_animate_init,
+.screen-3-icon-box_animate_init{
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen-3-text_animate_done,
+.screen-3-icon-box_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+
+
+/*第四屏动画*/
+.screen-4-text,
+.screen-4-itembox{
+	transition: all 1s;
+}
+
+.screen-4-text_animate_init{
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen-4-text_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen-4-itembox_animate_init{
+	opacity: 0;
+	transform: scale(0.3,0.3);
+}
+.screen-4-itembox_animate_done{
+	opacity: 1;
+	transform: scale(1,1);
+}
+
+
+/*第五屏动画*/
+.screen-5-text,
+.screen-5-pic{
+	transition: all 1s;
+}
+
+.screen-5-text_animate_init{
+	opacity: 0;
+	transform: translate(0,100%);
+}
+.screen-5-text_animate_done{
+	opacity: 1;
+	transform: translate(0,0);
+}
+.screen-5-pic_animate_init{
+	opacity: 0;
+	transform: scale(0.3,0.3);
+}
+.screen-5-pic_animate_done{
+	opacity: 1;
+	transform: scale(1,1);
+}
+
+
+/*定义帧动画*/
+@keyframes screen2 {
+	0%{
+		transform: translate(0,200%);
+	}
+	70% {
+		transform: translate(0,-10%);
+	}
+	80% {
+		transform: translate(0,10%);
+	}
+	90% {
+		transform: translate(0,-10%);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+
+}
+.screen-2-pic2_animate_init{
+ 	display: none;
+}
+.screen-2-pic2_animate_done{
+	display: block;
+ 	animation: screen2 2s ease-in-out ;
+}
+
+/* 边导航栏 */
+.outline{
+	transition: all 1s;
+}
+.outline_animate_init{
+ 	opacity: 0;
+	transform: translate(100%,0);
+}
+.outline_animate_done{
+ 	opacity: 1;
+	transform: translate(0,0);	
+}
