@@ -18,7 +18,7 @@
                     }
                     $layer.html(html);
                     $this.data('loaded', true);
-                }, 1000);
+                }, 0);
             });
         }
     });
@@ -43,7 +43,7 @@
                     }
                     $layer.html(html);
                     $this.data('loaded', true);
-                }, 1000);
+                }, 0);
             });
         }
     });

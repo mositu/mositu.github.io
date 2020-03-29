@@ -7,9 +7,7 @@
         }
         image.onload = function () {
             if (typeof imgLoaded === 'function') {
-                setTimeout(() => {
-                    imgLoaded(url);
-                }, 1000);
+                imgLoaded(url);
             }
         };
         image.src = url;
