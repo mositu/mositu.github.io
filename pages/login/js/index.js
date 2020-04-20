@@ -27,7 +27,8 @@ function checkUser(){
             url:'server/isUserRepeat.php',
             timeout: 3500,
             success:function(data){       
-                console.log('success');   
+                console.log('success');
+                console.log(data);
                     if(data.code == 1){
                         userIcon.attr('class','ok');
                         isRepeat = false;
