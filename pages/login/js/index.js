@@ -24,6 +24,7 @@ function checkUser(){
         userIcon.attr('class','');
         $.ajax({
             type:"GET",
+            data:{username:userVal},
             url:'server/isUserRepeat.php',
             timeout: 3500,
             success:function(data){       
