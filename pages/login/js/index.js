@@ -36,7 +36,7 @@ function checkUser(){
                         isRepeat = true;
                         userInfo.html(data.msg);
                     }else{
-                        userInfo.tml('检测失败，请重试...');
+                        userInfo.html('检测失败，请重试...');
                     }
                 }})
     }
@@ -70,11 +70,11 @@ function register(){
                // 调用显示登录界面
                showLogin();
                // 清空文本框
-               user.value = "";
-               pwd.value = "";
+               user.val('');
+               pwd.val('');
            },
            error:function(){
-               pwdInfo.innerHTML = '注册失败，请重试！';
+               pwdInfo.html('注册失败，请重试！');
            }
        })
     }
