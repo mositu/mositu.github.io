@@ -25,6 +25,7 @@ function checkUser(){
         $.ajax({
             type:"GET",
             data:{username:userVal},
+            dataType: 'jsonp',
             url:'server/isUserRepeat.php',
             timeout: 3500,
             success:function(data){       
