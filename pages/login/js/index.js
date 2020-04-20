@@ -24,7 +24,7 @@ function checkUser(){
         userIcon.attr('class','');
         $.ajax({
             type:"GET",
-            url:'http://localhost/server/isUserRepeat.php',
+            url:'http://https://mositu.github.io/pages/login/server/isUserRepeat.php',
             timeout: 3500,
             success:function(data){       
                 console.log('success');   
@@ -62,7 +62,7 @@ function register(){
     if(userReg.test(user_val) && pwdReg.test(pwd_val) && !isRepeat){
        // 发起请求，实现注册
        $.ajax({
-           url:"http://localhost/server/register.php",
+           url:"http://https://mositu.github.io/pages/login/server/register.php",
            method:"post",
            data:{username:user_val,userpwd:pwd_val},
            success:function(data){
